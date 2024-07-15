@@ -1,0 +1,437 @@
+
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainContent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+.headcontent{
+    margin-bottom: 10px;
+    
+}
+
+.headcontent h1{
+    text-align: center;
+}
+
+.colordiv{
+    background-color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+
+.headcontent p{
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.username{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.username label{
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#user{
+    margin-top: 30px;
+}
+
+.username input{
+    padding: 10px 12px;
+    border: 2px solid #848884;
+    outline: none;
+}
+
+.username input::placeholder{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.username input:hover{
+    border: 1px solid black;
+}
+
+.signupbtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.signupbtn button{
+    padding: 12px 12px;
+    width: 225px;
+    margin-bottom: 10px;
+    background-color: #1C2833;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+/* Login Responsive */
+
+
+.mainContent {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.headcontent {
+    margin-bottom: 10px;
+}
+
+.headcontent h1 {
+    text-align: center;
+}
+
+.colordiv {
+    background-color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.headcontent p {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.username {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.username input {
+    padding: 10px 12px;
+    border: 2px solid #848884;
+    outline: none;
+}
+
+.username input::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.username input:hover {
+    border: 1px solid black;
+}
+
+.signupbtn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signupbtn button {
+    padding: 12px 12px;
+    width: 225px;
+    margin-bottom: 10px;
+    background-color: #1C2833;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .colordiv {
+        padding: 20px;
+    }
+
+    .username input {
+        padding: 8px 10px;
+    }
+
+    .signupbtn button {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .username input {
+        padding: 6px 8px;
+    }
+
+    .signupbtn button {
+        width: 180px;
+    }
+}
+
+
+/* Create Post Responsive */
+
+
+#postcreate {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+}
+
+.postmain {
+    background-color: #fafafa;
+    width: 100%;
+    max-width: 740px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+}
+
+.posthead {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logoutBtn {
+    margin-right: 10px;
+}
+
+.rough {
+    margin-left: 10px;
+}
+
+.logoutBtn button {
+    padding: 6px 8px;
+    background-color: #1f1f1f;
+    color: #fafafa;
+    border: none;
+    border-radius: 8px;
+}
+
+.posthead h2 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    width: 100%;
+    background-color: #808080;
+    height: 3px;
+}
+
+.postimage {
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.postimage img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.welcome {
+    margin-left: 10px;
+}
+
+.postinput {
+    margin: 8px 0 0 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+}
+
+.postinput textarea {
+    width: 100%;
+    padding-left: 10px;
+    height: 100px;
+    resize: none;
+}
+
+.postinput input {
+    width: 100%;
+    padding-left: 10px;
+}
+
+.postinput button {
+    padding: 10px 12px;
+    width: 100%;
+    border: none;
+    background-color: #4169E1;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.postarea {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.userPotsHead img {
+    width: 100%;
+}
+
+.seeinsight {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    position: relative;
+    color: #4169E1;
+}
+
+.seeinsight button {
+    border: none;
+    background-color: #4169E1;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 8px;
+}
+
+.line2 {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #808080;
+    top: 50px;
+}
+
+.facebook-icon {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.image-icon span {
+    color: #808080;
+    font-size: 17px;
+}
+
+.share {
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.share p {
+    text-align: center;
+    color: #808080;
+}
+
+.facebook-icon img {
+    width: 80px;
+}
+
+.like {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+.mainBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    position: relative;
+}
+.editBtn button{
+    padding: 6px 8px;
+    background-color: #1f1f1f;
+    color: #fafafa;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .postmain {
+        padding: 10px;
+    }
+
+    .postinput textarea,
+    .postinput input,
+    .postinput button {
+        width: 100%;
+    }
+
+    .logoutBtn button {
+        padding: 6px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .postmain {
+        padding: 5px;
+    }
+
+    .postinput textarea {
+        height: 80px;
+    }
+
+    .logoutBtn button {
+        padding: 4px 6px;
+    }
+}
