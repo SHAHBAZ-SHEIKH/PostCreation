@@ -18,6 +18,17 @@ document.getElementById("btn").addEventListener("click", function(event) {
         return;
     }
 
+    if (username.includes("@")) {
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Username cannot contain an email address",
+        });
+        return;
+    }
+
+
+
     if (!username.trim() || !email.trim() || !password.trim()) {
         Swal.fire({
             icon: "error",
