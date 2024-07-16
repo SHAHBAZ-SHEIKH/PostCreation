@@ -114,15 +114,20 @@ document.getElementById("logOutBtn").addEventListener("click", function () {
 
 function editHandler(index){
     const newContent = prompt("Edit your content",allPosts[index].content);
-    if(!newContent){
-        alert("please enter a value")
+    const newImageUrl = prompt("Edit your Image Url",allPosts[index].imageUrl);
+    if(!newContent || !newImageUrl){
+        alert("please all fields are require")
         return
       }
-      if (newContent !== null) {
+      if (newContent !== null || newImageUrl !==null) {
         allPosts[index].content = newContent;
+        allPosts[index].imageUrl = newImageUrl;
         localStorage.setItem("allPosts", JSON.stringify(allPosts));
         displayPost();
+        return
       }
+
+      
 }
 
 function deleteHandler(index){
